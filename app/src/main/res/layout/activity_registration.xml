@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textStyle="bold|italic"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/registration"/>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/RegistratonScreen_Imagebutton_profileimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="111dp"
+            android:layout_y="27dp"
+            android:src="@drawable/user"
+
+            />
+
+        <ImageButton
+            android:id="@+id/RegistratonScreen_Imagebutton_chooseimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_x="216dp"
+            android:layout_y="123dp"
+            android:background="@drawable/roundshape"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+
+            />
+    </AbsoluteLayout>
+    <EditText
+        android:id="@+id/RegistratonScreen_username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+
+        android:hint="@string/username"/>
+
+    <EditText
+        android:id="@+id/RegistratonScreen_email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:padding="10dp"
+
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/email"/>
+    <EditText
+        android:id="@+id/RegistratonScreen_pass_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="textPassword"
+
+        android:hint="@string/password"/>
+    <Button
+        android:id="@+id/RegistratonScreen_signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singup"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shap"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/RegistratonScreen_forgot_password_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/forgotpassword"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/RegistratonScreen_signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/btn_link_to_login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"/>
+
+
+
+
+</LinearLayout>
+</ScrollView>

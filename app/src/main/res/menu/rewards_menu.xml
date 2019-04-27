@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/reward_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item android:id="@+id/reward_chat"
+        android:icon="@drawable/chat"
+        android:title="Chat With RestOff"
+        />
+    <item
+        android:id="@+id/reward_addpic"
+        android:title="Upload Bills"
+        android:icon="@drawable/billicon"
+        />
+    <item
+        android:id="@+id/reward_cliam"
+        android:title="Cliam"
+        android:icon="@drawable/ic_monetization_on_black_24dp"
+
+        />
+    <item
+
+        android:id="@+id/reward_person"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="User"
+        />
+
+
+
+</menu>

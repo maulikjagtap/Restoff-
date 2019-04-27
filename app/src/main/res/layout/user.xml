@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="166dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/user_name"
+                android:src="@drawable/food" />
+
+            <Button
+                android:id="@+id/user_edit"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/user_image"
+                android:layout_marginLeft="178dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/user_name"
+                android:background="@drawable/lihtedit_shap"
+                android:text="@string/editprofile"
+                android:textColor="@color/light"
+                android:textSize="10dp" />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+               />
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/light"
+                android:textSize="15sp"
+                android:layout_below="@id/user_name"
+         />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/card"
+        android:background="@color/placeholderbackground"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wallet"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans"
+        android:layout_below="@id/card"
+        android:textColor="@color/placeholderbackground"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/wallet_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/wallet1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/wallet1"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restoffwallet"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/wallet1" />
+            <ImageView
+                android:id="@+id/ruppe"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/text1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/wallet1"
+                android:foregroundGravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/rupee" />
+            <TextView
+                android:id="@+id/wallet_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/value"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/text1"
+                android:layout_toRightOf="@id/ruppe"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/text1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/placeholderbackground"
+                android:background="@drawable/ic_chevron_right_black_24dp"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

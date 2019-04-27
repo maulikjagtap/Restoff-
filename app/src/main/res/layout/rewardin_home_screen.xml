@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/offerrecycle"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp">
+    </android.support.v7.widget.RecyclerView>
+    <View
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:alpha=".5"
+    android:layout_marginTop="5dp"
+    android:layout_above="@id/layoutDots"
+    android:layout_below="@id/offerrecycle"
+    android:background="@color/placeholderbackground" />
+    <TextView
+    android:id="@+id/text"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/reward_provid"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:fontFamily="sans"
+    android:layout_below="@id/line"
+    android:textColor="@color/placeholderbackground"/>
+    <TableLayout
+    android:id="@+id/teblayot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+
+    android:layout_below="@+id/text"
+
+    >
+    <TableRow
+        android:weightSum="3"
+    >
+
+        <LinearLayout
+            android:id="@+id/restaurant"
+             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_x="111dp"
+            android:layout_y="27dp"
+            android:src="@drawable/food"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:fontFamily="casual"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/stationary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_x="111dp"
+                android:layout_y="27dp"
+                android:src="@drawable/stationary"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stationary"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:fontFamily="casual"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/beautypalour"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_x="111dp"
+                android:layout_y="27dp"
+                android:src="@drawable/beautyproduct"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beautypalour"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:fontFamily="casual"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </TableRow>
+        <TableRow
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:id="@+id/clothshop"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_x="111dp"
+                    android:layout_y="27dp"
+                    android:src="@drawable/clothshop"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clothshop"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="casual"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gym"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_x="111dp"
+                    android:layout_y="27dp"
+                    android:src="@drawable/gym"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gym"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="casual"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+
+                    android:layout_x="111dp"
+                    android:layout_y="27dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/commingsoon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="casual"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</RelativeLayout>
+</ScrollView>

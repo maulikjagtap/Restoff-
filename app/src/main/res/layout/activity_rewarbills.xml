@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <AbsoluteLayout
+        android:id="@+id/chooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bill_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="111dp"
+            android:layout_y="27dp"
+            android:src="@drawable/bill"
+
+            />
+
+        <ImageButton
+            android:id="@+id/choosebill"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_x="216dp"
+            android:layout_y="123dp"
+            android:background="@drawable/roundshape"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+
+            />
+    </AbsoluteLayout>
+    <EditText
+        android:id="@+id/bill_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/chooser"
+        android:hint="@string/username"/>
+    <EditText
+        android:id="@+id/billamout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/bill_shopname"
+        android:hint="@string/amout"/>
+    <EditText
+        android:id="@+id/aboutshop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="text"
+
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/billamout"
+        android:hint="@string/about" />
+
+    <RatingBar
+        android:id="@+id/shop_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutshop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_shap"
+        android:numStars="5" />
+    <Button
+        android:id="@+id/uploadbill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_rating"
+        android:layout_margin="20dp"
+        android:text="@string/billuplado"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shap" />
+
+
+
+
+</RelativeLayout>
+</ScrollView>

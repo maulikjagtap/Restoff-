@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/editprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editprofile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+         />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edituserimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/gym"
+        android:layout_below="@id/editprofile"
+        />
+        <TextView
+            android:id="@+id/editphoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="@string/editphoto"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/edituserimage"
+            android:layout_below="@id/editprofile"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/placeholderbackground"
+        android:layout_below="@id/edituserimage"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tIname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_shap"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/placeholderbackground"
+        android:layout_below="@id/tIname"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/teamil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/editusereamil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email1"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_shap"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/placeholderbackground"
+        android:layout_below="@id/teamil"/>
+    <Button
+        android:id="@+id/updatuser_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_shap"
+        android:textColor="@color/white"
+        android:text="@string/updateprofile"/>
+
+
+
+
+
+
+</RelativeLayout>

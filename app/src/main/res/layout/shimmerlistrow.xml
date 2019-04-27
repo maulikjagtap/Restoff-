@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@color/placeholderbackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/list_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_x="111dp"
+            android:layout_y="27dp"
+            android:src="@color/placeholderbackground"
+            />
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/placeholderbackground"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/list_image" />
+        <TextView
+            android:id="@+id/list_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/placeholderbackground"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/light"
+            android:textSize="15sp"
+            android:layout_below="@id/list_name"
+            android:layout_toRightOf="@id/list_image" />
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha=".5"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/list_address"
+            android:background="@color/placeholderbackground"
+            android:layout_toRightOf="@id/list_image"/>
+        <ImageView
+            android:id="@+id/des"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/list_image"
+            android:foregroundGravity="bottom"
+
+            android:src="@color/placeholderbackground" />
+        <TextView
+            android:id="@+id/list_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/placeholderbackground"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/light"
+            android:layout_below="@id/line"
+            android:layout_toRightOf="@id/des" />
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha=".5"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/list_description"
+            android:background="@color/placeholderbackground"
+            android:layout_toRightOf="@id/list_image"/>
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/list_description"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/list_image"
+            android:foregroundGravity="bottom"
+
+            android:src="@color/placeholderbackground" />
+        <TextView
+            android:id="@+id/list_contact"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/placeholderbackground"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:foregroundGravity="bottom"
+            android:gravity="bottom"
+            android:textSize="15sp"
+            android:layout_below="@id/list_description"
+            android:layout_toRightOf="@id/call"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

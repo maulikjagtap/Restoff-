@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addpicogmoth">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/month_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="31dp"
+        android:layout_x="111dp"
+        android:layout_y="27dp"
+        android:foregroundGravity="center"
+       app:civ_border_color="@color/colorPrimaryDark"
+      />
+    <EditText
+        android:id="@+id/addmoth_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="text"
+        android:layout_below="@id/month_image"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/shopname"/>
+    <EditText
+        android:id="@+id/addmoth_shopdeasription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_shap"
+        android:inputType="text"
+        android:layout_below="@id/addmoth_shopname"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/shopname"/>
+    <Button
+        android:id="@+id/addpic_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:textColor="@color/white"
+
+        android:background="@drawable/button_shap"
+        android:layout_below="@id/addmoth_shopdeasription"
+        android:layout_margin="20dp"/>
+
+
+
+
+</RelativeLayout>

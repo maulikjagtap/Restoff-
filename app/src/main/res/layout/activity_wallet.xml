@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wallet"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restoffwallet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/wallet1" />
+    <ImageView
+        android:id="@+id/ruppe"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/wallet1"
+        android:foregroundGravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/rupee" />
+    <TextView
+        android:id="@+id/user_wallet_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/text1"
+        android:layout_toRightOf="@id/ruppe"
+        android:layout_marginBottom="5dp"/>
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/vaucher_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@id/user_name"
+            android:src="@drawable/vaouchaer" />
+
+        <Button
+            android:id="@+id/user_valucher"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/vaucher_image"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/user_name"
+            android:background="@drawable/lihtedit_shap"
+            android:text="@string/getvaucher"
+            android:textColor="@color/light"
+            android:textSize="7dp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/card"
+        />
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/line"
+        android:background="@android:color/holo_blue_bright"
+        />
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        android:layout_below="@id/line2"
+        />
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/placeholderbackground"
+        android:layout_below="@id/recent"
+        android:layout_marginTop="10dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addmoney_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@id/line3"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+</ScrollView>

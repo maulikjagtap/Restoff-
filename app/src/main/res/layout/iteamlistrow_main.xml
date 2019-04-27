@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/iteamlistrowmain_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/light"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/placeholderbackground"
+       />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/iteamlistrowmain_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

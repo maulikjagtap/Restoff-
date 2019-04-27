@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/addmoney_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_x="111dp"
+            android:layout_y="27dp"
+            android:src="@drawable/money"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="monet recived from:"
+            android:layout_toRightOf="@id/addmoney_image"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/addmoney_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/addmoney_image"/>
+        <ImageView
+            android:id="@+id/ruppe"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/iteamlistrowsub_des"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/addmoney_shopname"
+            android:foregroundGravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/rupee"
+            />
+        <TextView
+            android:id="@+id/moneyrecive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/iteamlistrowsub_des"
+            android:layout_toRightOf="@id/ruppe"
+            android:layout_marginBottom="5dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
